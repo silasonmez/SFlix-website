@@ -1,0 +1,54 @@
+/* Profil Sayfası Genel Konteyner */
+.profile-container {
+    background-image: url('../assets/deneme.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmi tam ekrana yayıyor */
+    background-position: center; /* Arka planı ortalıyor */
+    height: 100vh; /* Tam ekran yüksekliği */
+    width: 100vw; /* Tam ekran genişliği */
+    display: flex; /* İçerikleri ortalamak için flex */
+    justify-content: center; /* Yatay merkezleme */
+    align-items: center; /* Dikey merkezleme */
+    margin: 0; /* Kenar boşluklarını sıfırlar */
+    padding: 0; /* İç kenar boşluklarını sıfırlar */
+    font-family: Arial, sans-serif; /* Genel yazı tipi */
+    box-sizing: border-box; /* İçerik ve kenar boşluğu hesaplamalarını düzgün yapar */
+  }
+  
+  /* Yuvarlak Profil Kartı */
+  .profile-card {
+    background: rgba(150, 192, 199, 0.9); /* Yarı saydam beyaz arka plan */
+    width: 300px; /* Genişlik */
+    height: 300px; /* Yükseklik */
+    border-radius: 50%; /* Yuvarlak kutu */
+    display: flex; /* İçerikleri ortalamak için flex */
+    flex-direction: column; /* İçerikleri dikey hizalar */
+    justify-content: center; /* Dikey merkezleme */
+    align-items: center; /* Yatay merkezleme */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Hafif gölge efekti */
+    text-align: center; /* Yazıları ortala */
+    padding: 20px; /* İçerik kenar boşlukları */
+  }
+  
+  /* Profil Kartı Başlığı */
+  .profile-card h1 {
+    font-size: 1.8rem;
+    color: #333; /* Koyu gri renk */
+    margin-bottom: 10px;
+  }
+  
+  /* Profil Bilgi Metinleri */
+  .profile-card p {
+    font-size: 1.2rem;
+    color: #555; /* Açık gri renk */
+    margin: 0; /* Kenar boşluklarını sıfırla */
+    text-align: center; /* Yazıları ortala */
+    line-height: 1.5; /* Satır yüksekliği */
+  }
+  
+  /* Hata Mesajı */
+  .error {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+  }
+  

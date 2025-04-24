@@ -1,0 +1,56 @@
+/* Ana düzen */
+
+.container {
+  min-height: 100vh; /* Tüm ekranın yüksekliğini kapsar */
+  background-color: #f0f8ff; /* Yumuşak bir mavi arka plan rengi eklendi */
+  background-image: url('../assets/background.jpg'); /* Arka plan resmi eklendi */
+  background-size: cover; /* Resim, konteynerin tamamını kaplar */
+  background-position: center; /* Resim merkeze hizalanır */
+  background-attachment: fixed; /* Resim sabitlenir */  
+  padding: 0px;
+  margin: 0; /* Margin sıfırlanır */
+  text-align: center;
+  width: 100%; /* Tam genişlik */
+  box-sizing: border-box; /* Tüm ölçümler düzgün hesaplanır */
+}
+
+.title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+}
+
+/* Grid Düzeni */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Kart */
+.card {
+  background-color: #f5f5f5;
+  border: 2px solid #381313;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 10px 10px 6px rgba(106, 33, 33, 0.475);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  background-color: #b2dfdb;
+  z-index: 10;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}

@@ -1,0 +1,92 @@
+  .adminContainer {
+    background-image: url('../assets/deneme.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resim tüm alanı kaplasın */
+    background-position: center; /* Görselin merkezden hizalanması */
+    background-repeat: no-repeat; /* Görsel tekrarlanmasın */
+    min-height: 100vh; /* Sayfanın tamamını kapsar */
+    width: 100%; /* Tam genişlik */
+    display: flex;
+    flex-direction: column; /* İçerikleri dikey hizalar */
+    align-items: center; /* Yatayda merkezleme */
+    justify-content: flex-start; /* İçerikleri üstten hizalar */
+    gap: 10px; /* Kutucuklar arası mesafe */
+    padding: 20px; /* Kenar boşlukları */
+    box-sizing: border-box; /* Padding ve border düzgün hesaplanır */
+    overflow: hidden; /* Görsel taşması engellenir */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+  }
+  
+  .endpointGroup {
+    margin-bottom: 40px;
+  }
+  
+  .groupTitle {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .buttonsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  
+  .endpointButton {
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .endpointButton:hover {
+    background-color: #e0f7fa;
+  }
+  
+  .responseContainer {
+    margin-top: 40px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .responseContainer pre {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  .paramInput {
+    margin: 5px 0;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .paramInput {
+    margin: 5px 0;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  

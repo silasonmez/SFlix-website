@@ -1,0 +1,115 @@
+/* Ana düzen */
+.container {
+  min-height: 100vh; /* Tüm ekranın yüksekliğini kapsar */
+  background-color: #f0f8ff; /* Yumuşak bir mavi arka plan rengi eklendi */
+  background-image: url('../assets/background.jpg'); /* Arka plan resmi eklendi */
+  background-size: cover; /* Resim, konteynerin tamamını kaplar */
+  background-position: center; /* Resim merkeze hizalanır */
+  background-attachment: fixed; /* Resim sabitlenir */  
+  padding: 0px;
+  margin: 0; /* Margin sıfırlanır */
+  text-align: center;
+  width: 100%; /* Tam genişlik */
+  box-sizing: border-box; /* Tüm ölçümler düzgün hesaplanır */
+}
+
+
+
+/* Başlık */
+.title {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #381313; /* Başlık rengi */
+  font-weight: bold;
+  text-align: center; /* Yatayda ortalama */
+  display: flex; /* Flexbox düzeni */
+  justify-content: center; /* Yatay ortalama */
+  align-items: center; /* Dikey ortalama */
+  height: 60px; /* Sabit bir yükseklik ile düzgün hizalama */
+}
+
+.error {
+  color: red;
+}
+
+/* Grid Düzeni */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Kart genişliği minimum 250px, maksimum kalan alan */
+  gap: 20px; /* Kartlar arasındaki boşluk */
+  justify-content: center; /* Kartları yatayda ortala */
+  padding: 20px; /* Sağ ve sol kenar boşlukları */
+  margin: 0 auto; /* Grid'i tam ortalamak için */
+}
+
+/* Kart */
+.card {
+  position: relative;
+  background-color: #f5f5f5;
+  border: 2px solid #381313;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 10px 10px 6px rgba(106, 33, 33, 0.475);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+  height: 350px; /* Sabit kart yüksekliği */
+  width: 100%; /* Grid sütun genişliğine uyumlu */
+  display: flex; /* Flexbox aktif */
+  justify-content: center; /* Yatayda ortalama */
+  align-items: center; /* Dikeyde ortalama */
+}
+
+.card:hover {
+  transform: scale(1.2); /* Hover durumunda büyüt */
+  background-color: #b2dfdb; /* Tatlı mavi tonu */
+  z-index: 10;
+}
+
+/* Hover Detayları */
+.cardHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(202, 175, 192, 0.95); /* Daha yoğun tatlı mavi */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card:hover .cardHover {
+  opacity: 1; /* Hover durumunda tamamen görünür */
+}
+
+/* Hover sırasında başlık kaybolmaz */
+.card:hover .cardTitle {
+  opacity: 0;
+}
+
+/* Hover Detay Başlığı */
+.hoverTitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Açıklama */
+.description {
+  font-size: 14px;
+  color: #d1ecf1;
+  text-align: center;
+  margin-top: 10px;
+  max-width: 90%;
+  word-wrap: break-word;
+}

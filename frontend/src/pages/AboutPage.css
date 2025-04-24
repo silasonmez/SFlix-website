@@ -1,0 +1,94 @@
+/* Tüm HTML ve Body Genel Ayarları */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Tam ekran görünüm */
+  width: 100%; /* Tam genişlik */
+  box-sizing: border-box; /* İçerik boyutunu düzgün hesaplar */
+}
+
+/* Ana Konteyner */
+.about-container {
+  background-image: url('../assets/deneme.jpg'); /* Arka plan resmi */
+  background-size: cover; /* Resim tüm alanı kaplasın */
+  background-position: center; /* Görselin merkezden hizalanması */
+  background-repeat: no-repeat; /* Görsel tekrarlanmasın */
+  min-height: 100vh; /* Sayfanın tamamını kapsar */
+  width: 100%; /* Tam genişlik */
+  display: flex;
+  flex-direction: column; /* İçerikleri dikey hizalar */
+  align-items: center; /* Yatayda merkezleme */
+  justify-content: flex-start; /* İçerikleri üstten hizalar */
+  gap: 10px; /* Kutucuklar arası mesafe */
+  padding: 20px; /* Kenar boşlukları */
+  box-sizing: border-box; /* Padding ve border düzgün hesaplanır */
+  overflow: hidden; /* Görsel taşması engellenir */
+}
+
+/* İletişim Kutusu */
+.contact-box {
+  background: rgba(0, 0, 0, 0.6); /* Yarı saydam siyah arka plan */
+  padding: 20px;
+  border-radius: 15px; /* Köşeleri yuvarlat */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Gölge efekti */
+  max-width: 500px; /* Maksimum genişlik */
+  text-align: center;
+  width: 100%; /* Mobil uyum için tam genişlik */
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Hakkında kutusuyla mesafe */
+}
+
+.contact-box h2 {
+  font-size: 2rem;
+  color: #ffcc00; /* Başlık için vurgu rengi */
+  margin-bottom: 15px;
+}
+
+.contact-box p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+/* Hakkında Kutusu */
+.about-box {
+  background: rgba(59, 135, 137, 0.7); /* Yarı saydam kutucuk */
+  padding: 30px;
+  border-radius: 15px; /* Köşeleri yuvarlat */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Gölge efekti */
+  max-width: 800px; /* Maksimum genişlik */
+  text-align: center;
+  box-sizing: border-box;
+  flex: 1; /* Hakkında kutusu aşağıya doğru esner */
+}
+
+.about-box h1 {
+  color: #1f5762; /* Başlık rengi */
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+}
+
+.about-box p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.8; /* Satır arası boşluk */
+  margin-bottom: 15px;
+}
+
+.about-box strong {
+  color: hsl(227, 12%, 39%); /* Vurgulu yazı için renk */
+}
+
+/* Tüm Elemanlar İçin Genel Ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Kenar boşluklarını düzgün hesaplar */
+}
+
+/* Görselin Taşmasını Önlemek İçin */
+body::after {
+  content: '';
+  display: block;
+  clear: both;
+}

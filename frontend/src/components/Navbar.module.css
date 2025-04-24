@@ -1,0 +1,54 @@
+.navbar {
+    position: sticky; /* Yapışkan pozisyon, kaydırıldığında sabit kalır */
+    top: 0; /* Sayfanın üst kısmına yapışır */
+    z-index: 1000; /* Diğer içeriklerin altında kalmaması için */
+    background-color: #d19ba6; /* Orijinal arka plan rengi */
+    color: rgba(253, 240, 240, 0.848); /* Orijinal yazı rengi */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom:0;
+    padding-bottom:0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+}
+
+.navbarTitle {
+    font-size: 24px;
+    margin: 0;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navItem {
+    margin-left: 20px;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    text-decoration: underline; /* Link üzerine gelindiğinde altı çizilir */
+}
+.logoutButton {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logoutButton:hover {
+    background-color: #c0392b;
+  }
+  
