@@ -20,4 +20,4 @@ SFlix, React ve .NET 8 kullanılarak geliştirilmiş bir film ve dizi öneri pla
 - Kategorilere göre filtreleme
 - Favorilere ekleme
 - Admin panelinden içerik yönetimi
-- Swagger ile API test desteği
+- Swagger ile API test desteği.
